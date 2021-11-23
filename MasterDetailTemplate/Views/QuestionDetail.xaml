@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:services="clr-namespace:MasterDetailTemplate.Services;assembly=MasterDetailTemplate"
+             xmlns:behaviors="clr-namespace:Behaviors;assembly=Behaviors"
+             mc:Ignorable="d"
+             BindingContext="{Binding QuestionDetailViewModel, Source={StaticResource ViewModelLocator}}"
+             x:Class="MasterDetailTemplate.Views.QuestionDetail"
+             services:NavigationContext.NavigationParameter="{Binding Question}">
+    <ContentPage.Behaviors>
+        <behaviors:EventHandlerBehavior EventName="Appearing">
+            <behaviors:ActionCollection>
+                <behaviors:InvokeCommandAction Command="{Binding PageAppearingCommand}" />
+            </behaviors:ActionCollection>
+        </behaviors:EventHandlerBehavior>
+    </ContentPage.Behaviors>
+
+    <ContentPage.Content>
+        <StackLayout Spacing="20" Padding="15">
+            <Label Text="Name:" FontSize="Medium" />
+            <Entry Text="{Binding Question.Name,Mode=TwoWay}" d:Text="Question.Name" FontSize="Small"/>
+            <Label Text="Content:" FontSize="Medium" />
+            <Entry Text="{Binding Question.Content,Mode=TwoWay}" d:Text="Question.Content" FontSize="Small"/>
+            <Label Text="Name数据绑定:" FontSize="Medium" />
+            <Label Text="{Binding Question.Name}" d:Text="Question.Name" FontSize="Small"/>
+            <Button Text="保存"
+                    Grid.Row="1"
+                    Command="{Binding SaveCommand}" />
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
