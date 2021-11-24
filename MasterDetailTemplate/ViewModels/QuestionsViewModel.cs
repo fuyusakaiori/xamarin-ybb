@@ -99,6 +99,7 @@ namespace MasterDetailTemplate.ViewModels
             QustionCollection.Clear();
             _canLoadMore = true;
             await QustionCollection.LoadMoreAsync();
+            _questionService.CloseConnection();
         }
 
 

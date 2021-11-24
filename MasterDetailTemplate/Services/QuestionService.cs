@@ -68,5 +68,6 @@ namespace MasterDetailTemplate.Services
         {
             await Connection.UpdateAsync(question);
         }
+        public void CloseConnection() => Connection.CloseAsync();
     }
 }

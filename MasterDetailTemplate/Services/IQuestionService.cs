@@ -27,5 +27,7 @@ namespace MasterDetailTemplate.Services
 
         // 按照编号获取错题
         Task GetQuestion(int id);
+        
+        void CloseConnection();
     }
 }
