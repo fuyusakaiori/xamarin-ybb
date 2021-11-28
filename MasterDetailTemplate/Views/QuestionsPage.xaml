@@ -14,7 +14,11 @@
     <ContentPage.Resources>
         <converters:ItemTappedEventArgsToQuestionConverter x:Key="ItemToQuestion" />
     </ContentPage.Resources>
-    
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="新增错题" Command="{Binding ToQuestionInsertCommand}"/>
+    </ContentPage.ToolbarItems>
+
     <!-- 自动调用事件 -->
     <ContentPage.Behaviors>
         <b:EventHandlerBehavior EventName="Appearing">

@@ -5,10 +5,19 @@ using System.Threading.Tasks;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using MasterDetailTemplate.Models;
+using MasterDetailTemplate.Services;
 
 namespace MasterDetailTemplate.ViewModels
 {
-    public class QuestionDetailViewModel :ObservableObject{
+    public class QuestionDetailViewModel :ObservableObject
+    {
+
+        private IQuestionService _questionService;
+
+        public QuestionDetailViewModel(IQuestionService questionService) {
+            _questionService = questionService;
+        }
+
         /// <summary>
         /// 错题详情。
         /// </summary>
@@ -59,7 +68,9 @@ namespace MasterDetailTemplate.ViewModels
         private RelayCommand _saveCommand;
 
         internal async Task SaveCommandFunction() {
-            System.Diagnostics.Debug.WriteLine("question save"+Question.Name+"  "+Question.Content);
+            System.Diagnostics.Debug.WriteLine(Question.Id + "\t" + Question.Name + "\t" + Question.Content);
+            await _questionService.UpdateQuestion(Question);
+            _questionService.CloseConnection();
         }
     }
 }

@@ -13,15 +13,14 @@ using Xamarin.Forms.Extended;
 
 namespace MasterDetailTemplate.ViewModels
 {
-    /// <summary>
-    /// 错题列表。
-    /// </summary>
+
+    // 调用 QuestionService 提供的方法
     public class QuestionsViewModel: ViewModelBase {
 
         // 用于判断是否开始加载的标志位
         private bool _canLoadMore;
 
-        // 查询语句需要 Lambda 表达式, 所以需要单独提供一个字段
+        //=====================================查询条件==========================================================
         private Expression<Func<Question, bool>> _where;
 
         public Expression<Func<Question, bool>> Where
@@ -31,6 +30,8 @@ namespace MasterDetailTemplate.ViewModels
             set => Set(nameof(Where), ref _where, value);
         }
 
+        //======================================无限滚动读取过程的提示信息=========================================
+
         private string _status;
         public string Status
         {
@@ -38,12 +39,12 @@ namespace MasterDetailTemplate.ViewModels
             set => Set(nameof(Status), ref _status, value);
         }
 
-        // 提示信息
         public const string Loading = "正在载入";
 
         public const string NoResult = "没有满足条件的结果";
 
         public const string NoMoreResult = "没有更多结果";
+
 
         // 错题集合
         public InfiniteScrollCollection<Question> QustionCollection { get; set; }
@@ -51,6 +52,7 @@ namespace MasterDetailTemplate.ViewModels
         // 导航服务
         private IContentNavigationService _contentNavigationService;
 
+        // 提供错题增删改查的基础类
         private IQuestionService _questionService;
 
 
@@ -95,10 +97,15 @@ namespace MasterDetailTemplate.ViewModels
                 async () => await PageAppearingCommandFunction()));
 
         public async Task PageAppearingCommandFunction() {
-            await _questionService.InitializeAsync();
+            // 1.判断数据库是否已经被初始化过:如果初始化过, 那么就不需要再继续初始化了，否则会覆盖此前修改的内容
+            if(!_questionService.Initialized())
+                await _questionService.InitializeAsync();
+            // 2.清理集合中的内容并继续读取
             QustionCollection.Clear();
             _canLoadMore = true;
+            // 3. 开始从数据库中读取相应的数据
             await QustionCollection.LoadMoreAsync();
+            // 4.关闭数据库连接
             _questionService.CloseConnection();
         }
 
@@ -110,11 +117,23 @@ namespace MasterDetailTemplate.ViewModels
             _questionTappedCommand ?? (_questionTappedCommand =
                 new RelayCommand<Question>(async question =>
                     await QuestionTappedCommandFunction(question)));
-
-
         internal async Task QuestionTappedCommandFunction(Question question) =>
             await _contentNavigationService.NavigateToAsync(
                 ContentNavigationServiceConstants.QuestionDetail, question);
+
+        private RelayCommand _toQuestionInsertCommand;
+
+        public RelayCommand ToQuestionInsertCommand => 
+            _toQuestionInsertCommand ?? (_toQuestionInsertCommand = 
+            new RelayCommand(async ()=> 
+                await ToQuestionInsertCommandFunction()));
+
+        public async Task ToQuestionInsertCommandFunction()
+        {
+            await _contentNavigationService.NavigateToAsync(ContentNavigationServiceConstants.NewQuestionPage);
+        }
+
+
 
     }
 }

@@ -23,6 +23,22 @@ namespace MasterDetailTemplate.Services
         public SQLiteAsyncConnection Connection =>
             _connection ?? (_connection = new SQLiteAsyncConnection(DbPath));
 
+
+        private IPreferenceStorage _preferenceStorage;
+
+        public QuestionService(IPreferenceStorage preferenceStorage)
+        {
+            _preferenceStorage = preferenceStorage;
+        }
+
+        public const int Version = 1;
+
+        /// <summary>
+        /// 数据库版本键。
+        /// </summary>
+        public const string VersionKey =
+            nameof(QuestionService) + "." + nameof(Version);
+
         public async Task InitializeAsync()
         {
             // 1. 在存储本地数据的地方创建数据库文件
@@ -32,7 +48,12 @@ namespace MasterDetailTemplate.Services
             {
                 await stream.CopyToAsync(fs);
             }
+
+            _preferenceStorage.Set(VersionKey, Version);
         }
+
+        public bool Initialized() =>
+            _preferenceStorage.Get(VersionKey, -1) == Version;
 
         // 创建错题
         public async Task CreateQuestion(Question question)
@@ -49,9 +70,9 @@ namespace MasterDetailTemplate.Services
 
 
         // 查询错题
-         public async Task GetQuestion(int id)
+         public async Task<Question> GetQuestion(int id)
         {
-            await Connection.Table<Question>().
+            return await Connection.Table<Question>().
                 Where(question => question.Id == id).FirstOrDefaultAsync();
         }
 
@@ -66,6 +87,8 @@ namespace MasterDetailTemplate.Services
 
         public async Task UpdateQuestion(Question question)
         {
+            System.Diagnostics.Debug.WriteLine("===============业务层===============");
+            System.Diagnostics.Debug.WriteLine(question.Id + "\t" + question.Name + "\t" + question.Content);
             await Connection.UpdateAsync(question);
         }
         public void CloseConnection() => Connection.CloseAsync();

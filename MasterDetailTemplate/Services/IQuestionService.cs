@@ -26,8 +26,10 @@ namespace MasterDetailTemplate.Services
             Expression<Func<Question, bool>> @where, int skip, int take);
 
         // 按照编号获取错题
-        Task GetQuestion(int id);
+        Task<Question> GetQuestion(int id);
         
         void CloseConnection();
+
+        bool Initialized();
     }
 }

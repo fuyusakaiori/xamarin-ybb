@@ -38,15 +38,13 @@ namespace MasterDetailTemplate.Services {
     /// 内容导航服务常量。
     /// </summary>
     public static class ContentNavigationServiceConstants {
-        /// <summary>
-        /// 搜索结果页。
-        /// </summary>
-        public static readonly string ResultPage = nameof(Views.ResultPage);
 
         /// <summary>
         /// 问题详情页。
         /// </summary>
         public static readonly string QuestionDetail = nameof(Views.QuestionDetail);
+
+        public static readonly string NewQuestionPage = nameof(Views.NewQuestionPage);
 
         /// <summary>
         /// 页面键-页面类型字典。
@@ -54,8 +52,9 @@ namespace MasterDetailTemplate.Services {
         public static readonly ReadOnlyDictionary<string, Type>
             PageKeyTypeDictionary = new ReadOnlyDictionary<string, Type>(
                 new Dictionary<string, Type> {
-                    [ResultPage] = typeof(ResultPage),
-                    [QuestionDetail] = typeof(QuestionDetail)
+                    [QuestionDetail] = typeof(QuestionDetail),
+                    [NewQuestionPage] = typeof(NewQuestionPage)
                 });
+
     }
 }
