@@ -1,10 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             BindingContext="{Binding NewQuestionViewModel, Source={StaticResource ViewModelLocator}}"
              x:Class="MasterDetailTemplate.Views.NewQuestionPage">
+
     <ContentPage.Content>
         <StackLayout Spacing="20" Padding="15">
-            <!-- 界面编写 -->
+            <Label Text="Id:" FontSize="Medium"/>
+            <Entry Text="{Binding Question.Id, Mode=TwoWay}" d:Text="Question.Id" FontSize="Small"/>
+            <Label Text="Name:" FontSize="Medium" />
+            <Entry Text="{Binding Question.Name,Mode=TwoWay}" d:Text="Question.Name" FontSize="Small"/>
+            <Label Text="Content:" FontSize="Medium" />
+            <Entry Text="{Binding Question.Content,Mode=TwoWay}" d:Text="Question.Content" FontSize="Small"/>
+            <Button Text="保存"
+                    Grid.Row="1"
+                    Command="{Binding AddCommand}" />
         </StackLayout>
+
     </ContentPage.Content>
 </ContentPage>
