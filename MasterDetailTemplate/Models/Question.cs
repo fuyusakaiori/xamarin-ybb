@@ -6,7 +6,7 @@ namespace MasterDetailTemplate.Models
 {
     [SQLite.Table("error_question")]
     public  class Question {
-        [SQLite.PrimaryKey, SQLite.Column("id")]
+        [SQLite.PrimaryKey, SQLite.Column("id"),SQLite.AutoIncrement]
         public int Id { get; set; }
 
         [SQLite.Column("name")]

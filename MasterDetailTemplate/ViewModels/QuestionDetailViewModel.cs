@@ -6,6 +6,7 @@ using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using MasterDetailTemplate.Models;
 using MasterDetailTemplate.Services;
+using MasterDetailTemplate.Services.Implementations;
 
 namespace MasterDetailTemplate.ViewModels
 {
@@ -14,8 +15,14 @@ namespace MasterDetailTemplate.ViewModels
 
         private IQuestionService _questionService;
 
+        // 导航服务
+        private IContentNavigationService _contentNavigationService;
+
         public QuestionDetailViewModel(IQuestionService questionService) {
             _questionService = questionService;
+            // 导航相关
+            _contentNavigationService = new ContentNavigationService(
+                new CachedContentPageActivationService());
         }
 
         /// <summary>
@@ -63,7 +70,7 @@ namespace MasterDetailTemplate.ViewModels
 
 
         /// <summary>
-        /// 页面显示命令。
+        ///保存命令。
         /// </summary>
         private RelayCommand _saveCommand;
 
@@ -71,6 +78,31 @@ namespace MasterDetailTemplate.ViewModels
             System.Diagnostics.Debug.WriteLine(Question.Id + "\t" + Question.Name + "\t" + Question.Content);
             await _questionService.UpdateQuestion(Question);
             _questionService.CloseConnection();
+        }
+
+
+
+        /// <summary>
+        /// 删除命令。
+        /// </summary>
+        public RelayCommand DeleteCommand =>
+            _deleteCommand ?? (_deleteCommand = new RelayCommand(
+                async () => await DeleteCommandFunction()));
+
+
+
+        /// <summary>
+        /// 删除命令。
+        /// </summary>
+        private RelayCommand _deleteCommand;
+
+        internal async Task DeleteCommandFunction()
+        {
+            System.Diagnostics.Debug.WriteLine(Question.Id + "\t" + Question.Name + "\t" + Question.Content);
+            await _questionService.DeleteQuestion(Question.Id);
+            _questionService.CloseConnection();
+            await _contentNavigationService.PopAsync();
+
         }
     }
 }

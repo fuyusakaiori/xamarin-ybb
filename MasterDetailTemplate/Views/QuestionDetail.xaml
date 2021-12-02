@@ -10,17 +10,18 @@
              x:Class="MasterDetailTemplate.Views.QuestionDetail"
              services:NavigationContext.NavigationParameter="{Binding Question}">
 
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="删除" Command="{Binding DeleteCommand}"/>
+    </ContentPage.ToolbarItems>
 
     <ContentPage.Content>
         <StackLayout Spacing="20" Padding="15">
-            <Label Text="Id:" FontSize="Medium"/>
-            <Entry Text="{Binding Question.Id, Mode=TwoWay}" d:Text="Question.Id" FontSize="Small"/>
+            <!-- <Label Text="Id:" FontSize="Medium"/> -->
+            <!-- <Entry Text="{Binding Question.Id, Mode=TwoWay}" d:Text="Question.Id" FontSize="Small"/> -->
             <Label Text="Name:" FontSize="Medium" />
             <Entry Text="{Binding Question.Name,Mode=TwoWay}" d:Text="Question.Name" FontSize="Small"/>
             <Label Text="Content:" FontSize="Medium" />
             <Entry Text="{Binding Question.Content,Mode=TwoWay}" d:Text="Question.Content" FontSize="Small"/>
-            <Label Text="Name数据绑定:" FontSize="Medium" />
-            <Label Text="{Binding Question.Name}" d:Text="Question.Name" FontSize="Small"/>
             <Button Text="保存"
                     Grid.Row="1"
                     Command="{Binding SaveCommand}" />

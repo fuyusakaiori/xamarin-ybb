@@ -9,8 +9,8 @@
 
     <ContentPage.Content>
         <StackLayout Spacing="20" Padding="15">
-            <Label Text="Id:" FontSize="Medium"/>
-            <Entry Text="{Binding Question.Id, Mode=TwoWay}" d:Text="Question.Id" FontSize="Small"/>
+            <!-- <Label Text="Id:" FontSize="Medium"/> -->
+            <!-- <Entry Text="{Binding Question.Id, Mode=TwoWay}" d:Text="Question.Id" FontSize="Small"/> -->
             <Label Text="Name:" FontSize="Medium" />
             <Entry Text="{Binding Question.Name,Mode=TwoWay}" d:Text="Question.Name" FontSize="Small"/>
             <Label Text="Content:" FontSize="Medium" />

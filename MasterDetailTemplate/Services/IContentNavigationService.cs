@@ -32,6 +32,7 @@ namespace MasterDetailTemplate.Services {
         /// <param name="parameter">The parameter that should be passed
         /// to the new page.</param>
         Task NavigateToAsync(string pageKey, object parameter);
+        Task PopAsync();
     }
 
     /// <summary>
@@ -46,6 +47,7 @@ namespace MasterDetailTemplate.Services {
 
         public static readonly string NewQuestionPage = nameof(Views.NewQuestionPage);
 
+        public static readonly string QuestionsPage = nameof(Views.QuestionsPage);
         /// <summary>
         /// 页面键-页面类型字典。
         /// </summary>
@@ -53,7 +55,8 @@ namespace MasterDetailTemplate.Services {
             PageKeyTypeDictionary = new ReadOnlyDictionary<string, Type>(
                 new Dictionary<string, Type> {
                     [QuestionDetail] = typeof(QuestionDetail),
-                    [NewQuestionPage] = typeof(NewQuestionPage)
+                    [NewQuestionPage] = typeof(NewQuestionPage),
+                    [QuestionsPage]=typeof(QuestionsPage)
                 });
 
     }

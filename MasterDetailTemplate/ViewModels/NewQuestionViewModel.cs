@@ -15,7 +15,7 @@ namespace MasterDetailTemplate.ViewModels
 
         public NewQuestionViewModel(IQuestionService questionService) {
             _questionService = questionService;
-            _question = new Question();
+            _question=new Question();
         }
         /// <summary>
         /// 新增的错题。

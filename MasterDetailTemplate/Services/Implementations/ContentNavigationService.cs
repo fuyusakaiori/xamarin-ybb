@@ -47,6 +47,14 @@ namespace MasterDetailTemplate.Services.Implementations {
             await MainPage.Detail.Navigation.PushAsync(page);
         }
 
+        /// <summary>
+        /// 返回上一页。
+        /// </summary>
+        public async Task PopAsync() {
+            await MainPage.Detail.Navigation.PopAsync();
+        }
+
+
         /******** 公开方法 ********/
 
         public ContentNavigationService(
