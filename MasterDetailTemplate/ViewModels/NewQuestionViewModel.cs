@@ -6,16 +6,22 @@ using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using MasterDetailTemplate.Models;
 using MasterDetailTemplate.Services;
+using MasterDetailTemplate.Services.Implementations;
 
 namespace MasterDetailTemplate.ViewModels
 {
     public class NewQuestionViewModel: ObservableObject
     {
         private IQuestionService _questionService;
+        // 导航服务
+        private IContentNavigationService _contentNavigationService;
 
         public NewQuestionViewModel(IQuestionService questionService) {
             _questionService = questionService;
             _question=new Question();
+            // 导航相关
+            _contentNavigationService = new ContentNavigationService(
+                new CachedContentPageActivationService());
         }
         /// <summary>
         /// 新增的错题。
@@ -70,6 +76,7 @@ namespace MasterDetailTemplate.ViewModels
             System.Diagnostics.Debug.WriteLine(Question.Id + "\t" + Question.Name + "\t" + Question.Content);
             await _questionService.CreateQuestion(Question);
             _questionService.CloseConnection();
+            await _contentNavigationService.PopAsync();
         }
     }
 }
