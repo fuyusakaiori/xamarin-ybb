@@ -14,6 +14,9 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using GalaSoft.MvvmLight.Ioc;
+using MasterDetailTemplate.Services;
+using MasterDetailTemplate.UWP.services;
 
 namespace MasterDetailTemplate.UWP
 {
@@ -56,6 +59,9 @@ namespace MasterDetailTemplate.UWP
                 rootFrame = new Frame();
 
                 rootFrame.NavigationFailed += OnNavigationFailed;
+
+                //ioc依赖注入
+                SimpleIoc.Default.Register<IPhotoPickerService, PhotoPickerService>();
 
                 Xamarin.Forms.Forms.Init(e);
 

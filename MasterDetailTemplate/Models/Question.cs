@@ -15,6 +15,9 @@ namespace MasterDetailTemplate.Models
         [SQLite.Column("content")]
         public string Content { get; set; }
 
+        [SQLite.Column("path")]
+        public string Path { get; set; }
+
         // TODO 错题类别和错题图片暂时没有
     }
 }

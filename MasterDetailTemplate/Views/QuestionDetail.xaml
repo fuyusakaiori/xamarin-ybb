@@ -13,7 +13,14 @@
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="删除" Command="{Binding DeleteCommand}"/>
     </ContentPage.ToolbarItems>
-
+    <!-- 自动调用事件 -->
+    <ContentPage.Behaviors>
+        <behaviors:EventHandlerBehavior EventName="Appearing">
+            <behaviors:ActionCollection>
+                <behaviors:InvokeCommandAction Command="{Binding PageAppearingCommand}" />
+            </behaviors:ActionCollection>
+        </behaviors:EventHandlerBehavior>
+    </ContentPage.Behaviors>
     <ContentPage.Content>
         <StackLayout Spacing="20" Padding="15">
             <!-- <Label Text="Id:" FontSize="Medium"/> -->
@@ -25,6 +32,10 @@
             <Button Text="保存"
                     Grid.Row="1"
                     Command="{Binding SaveCommand}" />
+            <Button Text="图片"
+                    Grid.Row="1"
+                    Command="{Binding AddImageCommand}" />
+            <Image Source="{Binding Image.Source}"/>
         </StackLayout>
 
     </ContentPage.Content>

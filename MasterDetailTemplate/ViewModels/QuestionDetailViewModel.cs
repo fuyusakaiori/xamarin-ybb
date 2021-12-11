@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using GalaSoft.MvvmLight;
@@ -7,6 +10,7 @@ using GalaSoft.MvvmLight.Command;
 using MasterDetailTemplate.Models;
 using MasterDetailTemplate.Services;
 using MasterDetailTemplate.Services.Implementations;
+using Xamarin.Forms;
 
 namespace MasterDetailTemplate.ViewModels
 {
@@ -18,11 +22,16 @@ namespace MasterDetailTemplate.ViewModels
         // 导航服务
         private IContentNavigationService _contentNavigationService;
 
-        public QuestionDetailViewModel(IQuestionService questionService) {
+        private IPhotoPickerService _iphotoPickerService;
+
+        public QuestionDetailViewModel(IQuestionService questionService,IPhotoPickerService iphotoPickerService) {
             _questionService = questionService;
+            _iphotoPickerService = iphotoPickerService;
             // 导航相关
             _contentNavigationService = new ContentNavigationService(
                 new CachedContentPageActivationService());
+
+            _image = new Image();
         }
 
         /// <summary>
@@ -38,6 +47,16 @@ namespace MasterDetailTemplate.ViewModels
         /// 错题详情。
         /// </summary>
         public Question _question;
+
+
+
+        public Image Image
+        {
+            get => _image;
+            set => Set(nameof(Image), ref _image, value);
+        }
+
+        public Image _image;
 
         /******** 绑定命令 ********/
 
@@ -57,7 +76,14 @@ namespace MasterDetailTemplate.ViewModels
 
         internal async Task PageAppearingCommandFunction()
         {
-            
+            //如果path不为空显示
+            if (Question.Path != null)
+            {
+                Image.Source = Question.Path;
+            } else {
+                //因为Image为viewmodel层绑定的变量，使用过后要清空
+                Image.Source = null;
+            }
         }
 
         /// <summary>
@@ -78,6 +104,11 @@ namespace MasterDetailTemplate.ViewModels
             System.Diagnostics.Debug.WriteLine(Question.Id + "\t" + Question.Name + "\t" + Question.Content);
             await _questionService.UpdateQuestion(Question);
             _questionService.CloseConnection();
+            // if (ImagePath!=null&&!ImagePath.Equals(Question.Path)) {
+            //      File.Delete(ImagePath);
+            // }
+
+            _contentNavigationService.PopAsync();
         }
 
 
@@ -103,6 +134,56 @@ namespace MasterDetailTemplate.ViewModels
             _questionService.CloseConnection();
             await _contentNavigationService.PopAsync();
 
+        }
+
+
+        /// <summary>
+        /// 增加图片命令。
+        /// </summary>
+        public RelayCommand AddImageCommand =>
+            _addImageCommand ?? (_addImageCommand = new RelayCommand(
+                async () => await AddImageCommandFunction()));
+
+
+
+        /// <summary>
+        /// 增加图片命令。
+        /// </summary>
+        private RelayCommand _addImageCommand;
+
+        //图片路径
+        private static string ImagePath;
+        private static string ImagePath2;
+        internal async Task AddImageCommandFunction() {
+            // Image.Source = ImageSource.FromStream(() => stream);
+            //从系统中获取图片的流
+            Stream stream = await _iphotoPickerService.GetImageStreamAsync();
+            if (stream!=null) {
+                //因为展示image需要占用图片资源，所以如果需要更换图片，是不能直接覆盖原有图片文件的（会造成线程访问资源的冲突），每次添加图片都会存入一个新的文件，文件命名为8位随机字符
+                ImagePath2 = Path.Combine(
+                        Environment.GetFolderPath(
+                            Environment.SpecialFolder.LocalApplicationData), RandomString(8)+".png");
+
+                using (var imageFileStream =
+                        new FileStream(ImagePath2, FileMode.Create))
+                    {
+                        await stream.CopyToAsync(imageFileStream); 
+                           //更改图片资源
+                            Image.Source = ImagePath2;
+                            ImagePath = Question.Path;
+                            Question.Path = ImagePath2;
+
+                    }
+                }
+
+            }
+        private static Random random = new Random();
+        //生成规定长度的字符串
+        public static string RandomString(int length)
+        {
+            const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+            return new string(Enumerable.Repeat(chars, length)
+                .Select(s => s[random.Next(s.Length)]).ToArray());
         }
     }
 }
