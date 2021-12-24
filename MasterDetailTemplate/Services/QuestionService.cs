@@ -26,6 +26,7 @@ namespace MasterDetailTemplate.Services
 
         private IPreferenceStorage _preferenceStorage;
 
+
         public QuestionService(IPreferenceStorage preferenceStorage)
         {
             _preferenceStorage = preferenceStorage;
@@ -44,8 +45,7 @@ namespace MasterDetailTemplate.Services
             // 1. 在存储本地数据的地方创建数据库文件
             using (FileStream fs = new FileStream(DbPath, FileMode.Create))
             // 2. 读取嵌入式数据库资源并且将其写入到数据库文件中: TODO 前提是嵌入式资源必须被配置进去了, 否则就是空指针异常   
-            using (Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(DbName))
-            {
+            using (Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(DbName)){
                 await stream.CopyToAsync(fs);
             }
 
@@ -87,10 +87,13 @@ namespace MasterDetailTemplate.Services
 
         public async Task UpdateQuestion(Question question)
         {
-            System.Diagnostics.Debug.WriteLine("===============业务层===============");
-            System.Diagnostics.Debug.WriteLine(question.Id + "\t" + question.Name + "\t" + question.Content);
             await Connection.UpdateAsync(question);
         }
         public void CloseConnection() => Connection.CloseAsync();
+
+        public SQLiteAsyncConnection GetConnection()
+        {
+            return Connection;
+        }
     }
 }

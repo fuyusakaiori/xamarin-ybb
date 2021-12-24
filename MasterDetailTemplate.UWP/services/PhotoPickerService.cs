@@ -8,11 +8,11 @@ using Windows.Storage;
 using Windows.Storage.Pickers;
 using Windows.Storage.Streams;
 using MasterDetailTemplate.Services;
-using MasterDetailTemplate.UWP.services;
+using MasterDetailTemplate.UWP.Services;
 using Xamarin.Forms;
 
 [assembly: Dependency(typeof(PhotoPickerService))]
-namespace MasterDetailTemplate.UWP.services
+namespace MasterDetailTemplate.UWP.Services
 {
     public class PhotoPickerService : IPhotoPickerService
     {

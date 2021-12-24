@@ -1,21 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Project\\Xamarin\\MasterDetailTemplate\\MasterDetailTemplate\\MasterDetailTemplate\\MasterDetailTemplate.csproj": {}
+    "D:\\Project\\Xamarin\\xamarin-ybb\\MasterDetailTemplate\\MasterDetailTemplate.csproj": {}
   },
   "projects": {
-    "D:\\Project\\Xamarin\\MasterDetailTemplate\\MasterDetailTemplate\\MasterDetailTemplate\\MasterDetailTemplate.csproj": {
+    "D:\\Project\\Xamarin\\xamarin-ybb\\MasterDetailTemplate\\MasterDetailTemplate.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\Xamarin\\MasterDetailTemplate\\MasterDetailTemplate\\MasterDetailTemplate\\MasterDetailTemplate.csproj",
+        "projectUniqueName": "D:\\Project\\Xamarin\\xamarin-ybb\\MasterDetailTemplate\\MasterDetailTemplate.csproj",
         "projectName": "MasterDetailTemplate",
-        "projectPath": "D:\\Project\\Xamarin\\MasterDetailTemplate\\MasterDetailTemplate\\MasterDetailTemplate\\MasterDetailTemplate.csproj",
+        "projectPath": "D:\\Project\\Xamarin\\xamarin-ybb\\MasterDetailTemplate\\MasterDetailTemplate.csproj",
         "packagesPath": "C:\\Users\\shenzhouhang\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\Xamarin\\MasterDetailTemplate\\MasterDetailTemplate\\MasterDetailTemplate\\obj\\",
+        "outputPath": "D:\\Project\\Xamarin\\xamarin-ybb\\MasterDetailTemplate\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet"
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
           "C:\\Users\\shenzhouhang\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -32,6 +32,7 @@
         },
         "frameworks": {
           "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
             "projectReferences": {}
           }
         },
@@ -43,6 +44,7 @@
       },
       "frameworks": {
         "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
           "dependencies": {
             "Behaviors.Forms": {
               "target": "Package",

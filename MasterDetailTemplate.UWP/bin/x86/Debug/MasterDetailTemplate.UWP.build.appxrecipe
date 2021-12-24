@@ -10,22 +10,22 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>ec0cc741-fd3e-485c-81be-68815c480690</PackageIdentityName>
     <PackageIdentityPublisher>CN=b7bf00ab-ad24-4200-a103-26b64c7d49c5</PackageIdentityPublisher>
-    <IntermediateOutputPath>D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\bin\x86\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\bin\x86\Debug\MasterDetailTemplate.UWP.exe">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\bin\x86\Debug\MasterDetailTemplate.UWP.exe">
       <PackagePath>entrypoint\MasterDetailTemplate.UWP.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\shenzhouhang\.nuget\packages\behaviors.forms\1.4.0\lib\netstandard1.0\Behaviors.dll">
@@ -580,7 +580,7 @@
     <AppxPackagedFile Include="C:\Users\shenzhouhang\.nuget\packages\xamarin.forms.extended.infinitescrolling\1.0.0-preview2\lib\netstandard1.0\Xamarin.Forms.Extended.InfiniteScrolling.dll">
       <PackagePath>Xamarin.Forms.Extended.InfiniteScrolling.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate\bin\Debug\netstandard2.0\MasterDetailTemplate.dll">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate\bin\Debug\netstandard2.0\MasterDetailTemplate.dll">
       <PackagePath>MasterDetailTemplate.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\shenzhouhang\.nuget\packages\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
@@ -589,136 +589,136 @@
     <AppxPackagedFile Include="C:\Users\shenzhouhang\.nuget\packages\xamarin.forms\4.5.0.495\lib\uap10.0.16299\Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml">
       <PackagePath>Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Assets\LargeTile.scale-100.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Assets\LargeTile.scale-100.png">
       <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Assets\LargeTile.scale-200.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Assets\LargeTile.scale-200.png">
       <PackagePath>Assets\LargeTile.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Assets\LargeTile.scale-400.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Assets\LargeTile.scale-400.png">
       <PackagePath>Assets\LargeTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Assets\SmallTile.scale-100.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Assets\SmallTile.scale-100.png">
       <PackagePath>Assets\SmallTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Assets\SmallTile.scale-200.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Assets\SmallTile.scale-200.png">
       <PackagePath>Assets\SmallTile.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Assets\SmallTile.scale-400.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Assets\SmallTile.scale-400.png">
       <PackagePath>Assets\SmallTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Assets\SplashScreen.scale-400.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Assets\SplashScreen.scale-400.png">
       <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Assets\Square150x150Logo.scale-100.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Assets\Square150x150Logo.scale-100.png">
       <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Assets\Square150x150Logo.scale-400.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Assets\Square150x150Logo.scale-400.png">
       <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Assets\Square44x44Logo.scale-100.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Assets\Square44x44Logo.scale-100.png">
       <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Assets\Square44x44Logo.scale-400.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Assets\Square44x44Logo.scale-400.png">
       <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Assets\Square44x44Logo.targetsize-16.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Assets\Square44x44Logo.targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Assets\Square44x44Logo.targetsize-256.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Assets\Square44x44Logo.targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Assets\Square44x44Logo.targetsize-48.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Assets\Square44x44Logo.targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Assets\StoreLogo.scale-200.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Assets\StoreLogo.scale-200.png">
       <PackagePath>Assets\StoreLogo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Assets\StoreLogo.scale-400.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Assets\StoreLogo.scale-400.png">
       <PackagePath>Assets\StoreLogo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Assets\Wide310x150Logo.scale-100.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Assets\Wide310x150Logo.scale-100.png">
       <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Assets\Wide310x150Logo.scale-400.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Assets\Wide310x150Logo.scale-400.png">
       <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\xamarin_logo.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\xamarin_logo.png">
       <PackagePath>xamarin_logo.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\add.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\add.png">
       <PackagePath>add.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\save.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\save.png">
       <PackagePath>save.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\cancel.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\cancel.png">
       <PackagePath>cancel.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\bin\x86\Debug\MasterDetailTemplate.UWP.xr.xml">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\bin\x86\Debug\MasterDetailTemplate.UWP.xr.xml">
       <PackagePath>MasterDetailTemplate.UWP.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.16299.0\\redist\Debug\x86\ucrtbased.dll">
@@ -730,10 +730,10 @@
     <AppxPackagedFile Include="C:\Users\shenzhouhang\.nuget\packages\microsoft.ui.xaml\2.3.191211002\buildTransitive\..\lib\uap10.0\Microsoft.UI.Xaml.winmd">
       <PackagePath>WinMetadata\Microsoft.UI.Xaml.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\bin\x86\Debug\Core\MasterDetailTemplate.UWP.exe">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\bin\x86\Debug\Core\MasterDetailTemplate.UWP.exe">
       <PackagePath>MasterDetailTemplate.UWP.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

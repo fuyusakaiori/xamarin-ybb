@@ -73,7 +73,6 @@ namespace MasterDetailTemplate.ViewModels
 
         internal async Task AddCommandFunction()
         {
-            System.Diagnostics.Debug.WriteLine(Question.Id + "\t" + Question.Name + "\t" + Question.Content);
             await _questionService.CreateQuestion(Question);
             _questionService.CloseConnection();
             await _contentNavigationService.PopAsync();

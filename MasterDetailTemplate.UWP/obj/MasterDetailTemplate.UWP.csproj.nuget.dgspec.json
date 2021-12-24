@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Project\\Xamarin\\MasterDetailTemplate\\MasterDetailTemplate\\MasterDetailTemplate.UWP\\MasterDetailTemplate.UWP.csproj": {}
+    "D:\\Project\\Xamarin\\xamarin-ybb\\MasterDetailTemplate.UWP\\MasterDetailTemplate.UWP.csproj": {}
   },
   "projects": {
-    "D:\\Project\\Xamarin\\MasterDetailTemplate\\MasterDetailTemplate\\MasterDetailTemplate.UWP\\MasterDetailTemplate.UWP.csproj": {
+    "D:\\Project\\Xamarin\\xamarin-ybb\\MasterDetailTemplate.UWP\\MasterDetailTemplate.UWP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\Xamarin\\MasterDetailTemplate\\MasterDetailTemplate\\MasterDetailTemplate.UWP\\MasterDetailTemplate.UWP.csproj",
+        "projectUniqueName": "D:\\Project\\Xamarin\\xamarin-ybb\\MasterDetailTemplate.UWP\\MasterDetailTemplate.UWP.csproj",
         "projectName": "MasterDetailTemplate.UWP",
-        "projectPath": "D:\\Project\\Xamarin\\MasterDetailTemplate\\MasterDetailTemplate\\MasterDetailTemplate.UWP\\MasterDetailTemplate.UWP.csproj",
+        "projectPath": "D:\\Project\\Xamarin\\xamarin-ybb\\MasterDetailTemplate.UWP\\MasterDetailTemplate.UWP.csproj",
         "packagesPath": "C:\\Users\\shenzhouhang\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\Xamarin\\MasterDetailTemplate\\MasterDetailTemplate\\MasterDetailTemplate.UWP\\obj\\",
+        "outputPath": "D:\\Project\\Xamarin\\xamarin-ybb\\MasterDetailTemplate.UWP\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -35,8 +35,8 @@
         "frameworks": {
           "uap10.0.16299": {
             "projectReferences": {
-              "D:\\Project\\Xamarin\\MasterDetailTemplate\\MasterDetailTemplate\\MasterDetailTemplate\\MasterDetailTemplate.csproj": {
-                "projectPath": "D:\\Project\\Xamarin\\MasterDetailTemplate\\MasterDetailTemplate\\MasterDetailTemplate\\MasterDetailTemplate.csproj"
+              "D:\\Project\\Xamarin\\xamarin-ybb\\MasterDetailTemplate\\MasterDetailTemplate.csproj": {
+                "projectPath": "D:\\Project\\Xamarin\\xamarin-ybb\\MasterDetailTemplate\\MasterDetailTemplate.csproj"
               }
             }
           }
@@ -89,14 +89,14 @@
         }
       }
     },
-    "D:\\Project\\Xamarin\\MasterDetailTemplate\\MasterDetailTemplate\\MasterDetailTemplate\\MasterDetailTemplate.csproj": {
+    "D:\\Project\\Xamarin\\xamarin-ybb\\MasterDetailTemplate\\MasterDetailTemplate.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\Xamarin\\MasterDetailTemplate\\MasterDetailTemplate\\MasterDetailTemplate\\MasterDetailTemplate.csproj",
+        "projectUniqueName": "D:\\Project\\Xamarin\\xamarin-ybb\\MasterDetailTemplate\\MasterDetailTemplate.csproj",
         "projectName": "MasterDetailTemplate",
-        "projectPath": "D:\\Project\\Xamarin\\MasterDetailTemplate\\MasterDetailTemplate\\MasterDetailTemplate\\MasterDetailTemplate.csproj",
+        "projectPath": "D:\\Project\\Xamarin\\xamarin-ybb\\MasterDetailTemplate\\MasterDetailTemplate.csproj",
         "packagesPath": "C:\\Users\\shenzhouhang\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\Xamarin\\MasterDetailTemplate\\MasterDetailTemplate\\MasterDetailTemplate\\obj\\",
+        "outputPath": "D:\\Project\\Xamarin\\xamarin-ybb\\MasterDetailTemplate\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

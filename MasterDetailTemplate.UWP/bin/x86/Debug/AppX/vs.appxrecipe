@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>ec0cc741-fd3e-485c-81be-68815c480690</PackageIdentityName>
     <PackageIdentityPublisher>CN=b7bf00ab-ad24-4200-a103-26b64c7d49c5</PackageIdentityPublisher>
-    <IntermediateOutputPath>D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,8 +18,8 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>B6CD748615FB1137EA16CB467CBE967B042211A9413BCD8A65E123B46451FE51</RegisteredManifestChecksum>
+    <LayoutDir>D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\bin\x86\Debug\AppX</LayoutDir>
+    <RegisteredManifestChecksum>9373FA4C8D558CFC8BA4F1A9C75161059A4A00833DA768258448BA3281B9A900</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>1d39201a-d7cc-41db-bd83-851adbf647b6_1.0.0.0_x86__dg0bf7mjeta3g</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>1d39201a-d7cc-41db-bd83-851adbf647b6_dg0bf7mjeta3g!App</RegisteredUserModeAppID>
     <RegisteredPackageID>1d39201a-d7cc-41db-bd83-851adbf647b6</RegisteredPackageID>
@@ -27,16 +27,16 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-11-28T05:50:44.321</Modified>
+      <Modified>2021-12-24T08:59:28.826</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\bin\x86\Debug\MasterDetailTemplate.UWP.exe">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\bin\x86\Debug\MasterDetailTemplate.UWP.exe">
       <PackagePath>entrypoint\MasterDetailTemplate.UWP.exe</PackagePath>
-      <Modified>2021-11-28T05:50:41.104</Modified>
+      <Modified>2021-12-24T08:59:27.390</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\shenzhouhang\.nuget\packages\behaviors.forms\1.4.0\lib\netstandard1.0\Behaviors.dll">
       <PackagePath>Behaviors.dll</PackagePath>
@@ -774,9 +774,9 @@
       <PackagePath>Xamarin.Forms.Extended.InfiniteScrolling.dll</PackagePath>
       <Modified>2017-10-29T05:26:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate\bin\Debug\netstandard2.0\MasterDetailTemplate.dll">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate\bin\Debug\netstandard2.0\MasterDetailTemplate.dll">
       <PackagePath>MasterDetailTemplate.dll</PackagePath>
-      <Modified>2021-11-28T05:50:33.839</Modified>
+      <Modified>2021-12-24T09:03:44.740</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\shenzhouhang\.nuget\packages\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
@@ -786,172 +786,172 @@
       <PackagePath>Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml</PackagePath>
       <Modified>2020-03-24T23:31:52.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2021-05-10T13:17:26.000</Modified>
+      <Modified>2021-12-15T15:05:25.374</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Assets\LargeTile.scale-100.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Assets\LargeTile.scale-100.png">
       <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-10T13:17:26.000</Modified>
+      <Modified>2021-12-15T15:05:25.345</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Assets\LargeTile.scale-200.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Assets\LargeTile.scale-200.png">
       <PackagePath>Assets\LargeTile.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-10T13:17:26.000</Modified>
+      <Modified>2021-12-15T15:05:25.346</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Assets\LargeTile.scale-400.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Assets\LargeTile.scale-400.png">
       <PackagePath>Assets\LargeTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-10T13:17:26.000</Modified>
+      <Modified>2021-12-15T15:05:25.347</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Assets\SmallTile.scale-100.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Assets\SmallTile.scale-100.png">
       <PackagePath>Assets\SmallTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-10T13:17:26.000</Modified>
+      <Modified>2021-12-15T15:05:25.347</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Assets\SmallTile.scale-200.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Assets\SmallTile.scale-200.png">
       <PackagePath>Assets\SmallTile.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-10T13:17:26.000</Modified>
+      <Modified>2021-12-15T15:05:25.348</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Assets\SmallTile.scale-400.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Assets\SmallTile.scale-400.png">
       <PackagePath>Assets\SmallTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-10T13:17:26.000</Modified>
+      <Modified>2021-12-15T15:05:25.349</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-10T13:17:26.000</Modified>
+      <Modified>2021-12-15T15:05:25.350</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-10T13:17:26.000</Modified>
+      <Modified>2021-12-15T15:05:25.351</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Assets\SplashScreen.scale-400.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Assets\SplashScreen.scale-400.png">
       <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-10T13:17:26.000</Modified>
+      <Modified>2021-12-15T15:05:25.352</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Assets\Square150x150Logo.scale-100.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Assets\Square150x150Logo.scale-100.png">
       <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-10T13:17:26.000</Modified>
+      <Modified>2021-12-15T15:05:25.352</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-10T13:17:26.000</Modified>
+      <Modified>2021-12-15T15:05:25.353</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Assets\Square150x150Logo.scale-400.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Assets\Square150x150Logo.scale-400.png">
       <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-10T13:17:26.000</Modified>
+      <Modified>2021-12-15T15:05:25.354</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-10T13:17:26.000</Modified>
+      <Modified>2021-12-15T15:05:25.354</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-10T13:17:26.000</Modified>
+      <Modified>2021-12-15T15:05:25.355</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-10T13:17:26.000</Modified>
+      <Modified>2021-12-15T15:05:25.356</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Assets\Square44x44Logo.scale-100.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Assets\Square44x44Logo.scale-100.png">
       <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-10T13:17:26.000</Modified>
+      <Modified>2021-12-15T15:05:25.357</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-10T13:17:26.000</Modified>
+      <Modified>2021-12-15T15:05:25.358</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Assets\Square44x44Logo.scale-400.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Assets\Square44x44Logo.scale-400.png">
       <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-10T13:17:26.000</Modified>
+      <Modified>2021-12-15T15:05:25.359</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Assets\Square44x44Logo.targetsize-16.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Assets\Square44x44Logo.targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-10T13:17:26.000</Modified>
+      <Modified>2021-12-15T15:05:25.359</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Assets\Square44x44Logo.targetsize-256.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Assets\Square44x44Logo.targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-10T13:17:26.000</Modified>
+      <Modified>2021-12-15T15:05:25.360</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Assets\Square44x44Logo.targetsize-48.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Assets\Square44x44Logo.targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-10T13:17:26.000</Modified>
+      <Modified>2021-12-15T15:05:25.361</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-10T13:17:26.000</Modified>
+      <Modified>2021-12-15T15:05:25.362</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Assets\StoreLogo.scale-200.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Assets\StoreLogo.scale-200.png">
       <PackagePath>Assets\StoreLogo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-10T13:17:26.000</Modified>
+      <Modified>2021-12-15T15:05:25.364</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Assets\StoreLogo.scale-400.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Assets\StoreLogo.scale-400.png">
       <PackagePath>Assets\StoreLogo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-10T13:17:26.000</Modified>
+      <Modified>2021-12-15T15:05:25.365</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Assets\Wide310x150Logo.scale-100.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Assets\Wide310x150Logo.scale-100.png">
       <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-10T13:17:26.000</Modified>
+      <Modified>2021-12-15T15:05:25.366</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-10T13:17:26.000</Modified>
+      <Modified>2021-12-15T15:05:25.367</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\Assets\Wide310x150Logo.scale-400.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\Assets\Wide310x150Logo.scale-400.png">
       <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-10T13:17:26.000</Modified>
+      <Modified>2021-12-15T15:05:25.368</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\xamarin_logo.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\xamarin_logo.png">
       <PackagePath>xamarin_logo.png</PackagePath>
-      <Modified>2021-05-10T13:17:26.000</Modified>
+      <Modified>2021-12-15T15:05:26.944</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\add.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\add.png">
       <PackagePath>add.png</PackagePath>
-      <Modified>2021-05-10T13:17:26.000</Modified>
+      <Modified>2021-12-15T15:05:25.374</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\save.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\save.png">
       <PackagePath>save.png</PackagePath>
-      <Modified>2021-05-10T13:17:26.000</Modified>
+      <Modified>2021-12-15T15:05:26.941</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\cancel.png">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\cancel.png">
       <PackagePath>cancel.png</PackagePath>
-      <Modified>2021-05-10T13:17:26.000</Modified>
+      <Modified>2021-12-15T15:05:26.774</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\bin\x86\Debug\MasterDetailTemplate.UWP.xr.xml">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\bin\x86\Debug\MasterDetailTemplate.UWP.xr.xml">
       <PackagePath>MasterDetailTemplate.UWP.xr.xml</PackagePath>
-      <Modified>2021-11-21T08:11:24.723</Modified>
+      <Modified>2021-12-15T15:05:26.910</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-11-28T05:50:40.925</Modified>
+      <Modified>2021-12-24T08:59:27.161</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2021-11-28T05:50:40.925</Modified>
+      <Modified>2021-12-24T08:59:27.161</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.16299.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -965,13 +965,13 @@
       <PackagePath>WinMetadata\Microsoft.UI.Xaml.winmd</PackagePath>
       <Modified>2019-12-12T02:48:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2021-11-28T05:50:42.913</Modified>
+      <Modified>2021-12-24T08:34:25.951</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Project\Xamarin\MasterDetailTemplate\MasterDetailTemplate\MasterDetailTemplate.UWP\bin\x86\Debug\Core\MasterDetailTemplate.UWP.exe">
+    <AppxPackagedFile Include="D:\Project\Xamarin\xamarin-ybb\MasterDetailTemplate.UWP\bin\x86\Debug\Core\MasterDetailTemplate.UWP.exe">
       <PackagePath>MasterDetailTemplate.UWP.exe</PackagePath>
-      <Modified>2021-11-28T05:50:44.315</Modified>
+      <Modified>2021-12-24T08:59:28.820</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

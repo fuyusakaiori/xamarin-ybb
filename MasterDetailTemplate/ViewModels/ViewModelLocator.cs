@@ -20,6 +20,7 @@ namespace MasterDetailTemplate.ViewModels {
             SimpleIoc.Default.Register<QuestionsViewModel>();
             SimpleIoc.Default.Register<QuestionDetailViewModel>();
             SimpleIoc.Default.Register<IQuestionService, QuestionService>();
+            SimpleIoc.Default.Register<IQuestionCategoryService, QuestionCategoryService>();
             SimpleIoc.Default.Register<NewQuestionViewModel>();
         }
     }

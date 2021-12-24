@@ -24,13 +24,15 @@ namespace MasterDetailTemplate.ViewModels
 
         private IPhotoPickerService _iphotoPickerService;
 
+
+        // 新增选取图片的功能
         public QuestionDetailViewModel(IQuestionService questionService,IPhotoPickerService iphotoPickerService) {
             _questionService = questionService;
             _iphotoPickerService = iphotoPickerService;
             // 导航相关
             _contentNavigationService = new ContentNavigationService(
                 new CachedContentPageActivationService());
-
+            // 前端接收到的图片
             _image = new Image();
         }
 
@@ -101,13 +103,8 @@ namespace MasterDetailTemplate.ViewModels
         private RelayCommand _saveCommand;
 
         internal async Task SaveCommandFunction() {
-            System.Diagnostics.Debug.WriteLine(Question.Id + "\t" + Question.Name + "\t" + Question.Content);
             await _questionService.UpdateQuestion(Question);
             _questionService.CloseConnection();
-            // if (ImagePath!=null&&!ImagePath.Equals(Question.Path)) {
-            //      File.Delete(ImagePath);
-            // }
-
             _contentNavigationService.PopAsync();
         }
 
@@ -129,7 +126,6 @@ namespace MasterDetailTemplate.ViewModels
 
         internal async Task DeleteCommandFunction()
         {
-            System.Diagnostics.Debug.WriteLine(Question.Id + "\t" + Question.Name + "\t" + Question.Content);
             await _questionService.DeleteQuestion(Question.Id);
             _questionService.CloseConnection();
             await _contentNavigationService.PopAsync();

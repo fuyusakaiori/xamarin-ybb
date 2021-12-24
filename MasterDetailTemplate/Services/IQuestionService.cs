@@ -1,4 +1,5 @@
 ﻿using MasterDetailTemplate.Models;
+using SQLite;
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
@@ -31,5 +32,7 @@ namespace MasterDetailTemplate.Services
         void CloseConnection();
 
         bool Initialized();
+
+        SQLiteAsyncConnection GetConnection();
     }
 }

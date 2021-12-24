@@ -16,7 +16,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using GalaSoft.MvvmLight.Ioc;
 using MasterDetailTemplate.Services;
-using MasterDetailTemplate.UWP.services;
+using MasterDetailTemplate.UWP.Services;
 
 namespace MasterDetailTemplate.UWP
 {

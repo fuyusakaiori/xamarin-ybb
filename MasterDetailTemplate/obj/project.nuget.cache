@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4MZUhbwj9DKp+KpGvu9mUvAC+55orlyXwADrwOn85OqSbSQQF3igcwf2/rOR0GrzcVzLo32MCzfhOe4NxzzZww==",
+  "dgSpecHash": "M9N3r3m1S4y3/W6SPS/r6l3bWKp9SACdVrMHk1wxeWDmdZvokzMsNbThoSJ1ze1lvNWOSCh0zRqUaRKjjM2HUg==",
   "success": true,
-  "projectFilePath": "D:\\Project\\Xamarin\\MasterDetailTemplate\\MasterDetailTemplate\\MasterDetailTemplate\\MasterDetailTemplate.csproj",
+  "projectFilePath": "D:\\Project\\Xamarin\\xamarin-ybb\\MasterDetailTemplate\\MasterDetailTemplate.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\shenzhouhang\\.nuget\\packages\\behaviors.forms\\1.4.0\\behaviors.forms.1.4.0.nupkg.sha512",
     "C:\\Users\\shenzhouhang\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
@@ -27,7 +27,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'MvvmLightLibs 5.4.1.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
+      "message": "已使用“.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8”而不是项目目标框架“.NETStandard,Version=v2.0”还原包“MvvmLightLibs 5.4.1.1”。此包可能与项目不完全兼容。",
       "libraryId": "MvvmLightLibs",
       "targetGraphs": [
         ".NETStandard,Version=v2.0"

@@ -54,14 +54,16 @@ namespace MasterDetailTemplate.ViewModels
 
         // 提供错题增删改查的基础类
         private IQuestionService _questionService;
+        private IQuestionCategoryService _questionCategoryService;
 
 
-        public QuestionsViewModel(IQuestionService questionService) {
+        public QuestionsViewModel(IQuestionService questionService, IQuestionCategoryService questionCategoryService) {
             // 导航相关
             _contentNavigationService = new ContentNavigationService(
                 new CachedContentPageActivationService());
             // 错题相关
             _questionService = questionService;
+            _questionCategoryService = questionCategoryService;
             // 初始化集合
             Where = Expression.Lambda<Func<Question, bool>>(
                // 1. 条件语句
@@ -83,6 +85,12 @@ namespace MasterDetailTemplate.ViewModels
 
                 if (QustionCollection.Count == 0 && list.Count == 0)
                     Status = NoResult;
+
+                foreach(Question question in list)
+                {
+                    QuestionCategory category = await _questionCategoryService.GetQuestionCategory(question.CategoryId);
+                    question.CategoryName = category.Name;
+                }
 
                 return list;
             };

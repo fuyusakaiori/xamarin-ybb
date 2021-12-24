@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8EdEXuRkTVRvnQI835FkSp5twEvicfm9tKxorRK774skjd3o40f4H0gEtqXTC4Po2g9ldvoDN5o+Lt7ekHZc8Q==",
+  "dgSpecHash": "vkzhKwd5fLyyoTEKXOF1AE2B6jl7pCQfTvTgion+qKze8NA/UuVdrLRXqT6BJtm2WoaRzJMoa+TodwoEYtyqiw==",
   "success": true,
-  "projectFilePath": "D:\\Project\\Xamarin\\MasterDetailTemplate\\MasterDetailTemplate\\MasterDetailTemplate.UWP\\MasterDetailTemplate.UWP.csproj",
+  "projectFilePath": "D:\\Project\\Xamarin\\xamarin-ybb\\MasterDetailTemplate.UWP\\MasterDetailTemplate.UWP.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\shenzhouhang\\.nuget\\packages\\behaviors.forms\\1.4.0\\behaviors.forms.1.4.0.nupkg.sha512",
     "C:\\Users\\shenzhouhang\\.nuget\\packages\\commonservicelocator\\2.0.2\\commonservicelocator.2.0.2.nupkg.sha512",
