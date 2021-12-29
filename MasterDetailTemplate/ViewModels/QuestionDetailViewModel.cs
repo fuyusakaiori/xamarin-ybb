@@ -191,7 +191,9 @@ namespace MasterDetailTemplate.ViewModels
         private RelayCommand _saveCommand;
 
         internal async Task SaveCommandFunction() {
-            Question.CategoryName = SelectedColorName;
+            if (SelectedColorName!=null) {
+               Question.CategoryName = SelectedColorName;
+            }
             await _questionService.UpdateQuestion(Question);
             _questionService.CloseConnection();
             _contentNavigationService.PopAsync();
