@@ -14,14 +14,17 @@ namespace MasterDetailTemplate.ViewModels {
 
         public NewQuestionViewModel NewQuestionViewModel =>
             SimpleIoc.Default.GetInstance<NewQuestionViewModel>();
-
+        public QuestionCategoryViewModel QuestionCategoryViewModel =>
+            SimpleIoc.Default.GetInstance<QuestionCategoryViewModel>();
         public ViewModelLocator() {
             SimpleIoc.Default.Register<IPreferenceStorage, PreferenceStorage>();
             SimpleIoc.Default.Register<QuestionsViewModel>();
             SimpleIoc.Default.Register<QuestionDetailViewModel>();
             SimpleIoc.Default.Register<IQuestionService, QuestionService>();
             SimpleIoc.Default.Register<IQuestionCategoryService, QuestionCategoryService>();
+            SimpleIoc.Default.Register<IAlertService, AlertService>();
             SimpleIoc.Default.Register<NewQuestionViewModel>();
+            SimpleIoc.Default.Register<QuestionCategoryViewModel>();
         }
     }
 }

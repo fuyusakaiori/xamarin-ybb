@@ -1,55 +1,54 @@
-﻿<?xml version="1.0"
-      encoding="utf-8"?>
-
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:b="clr-namespace:Behaviors;assembly=Behaviors"
-             xmlns:s="clr-namespace:Xamarin.Forms.Extended;assembly=Xamarin.Forms.Extended.InfiniteScrolling"
+             xmlns:services="clr-namespace:MasterDetailTemplate.Services;assembly=MasterDetailTemplate"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:converters="clr-namespace:MasterDetailTemplate.Converters;assembly=MasterDetailTemplate"
-             xmlns:services="clr-namespace:MasterDetailTemplate.Services;assembly=MasterDetailTemplate"
              mc:Ignorable="d"
+             x:Class="MasterDetailTemplate.Views.QuestionsPageForCategory"
              BindingContext="{Binding QuestionsViewModel, Source={StaticResource ViewModelLocator}}"
-             x:Class="MasterDetailTemplate.Views.QuestionsPage"
-             services:NavigationContext.NavigationParameter="{Binding QuestionCategory}">
+    services:NavigationContext.NavigationParameter="{Binding QuestionCategory}">
     <ContentPage.Resources>
         <converters:ItemTappedEventArgsToQuestionConverter x:Key="ItemToQuestion" />
     </ContentPage.Resources>
 
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="新增错题" Command="{Binding ToQuestionInsertCommand}"/>
+        <ToolbarItem Text="删除错题类别" Command="{Binding DeleteCategoryCommand}"/>
     </ContentPage.ToolbarItems>
 
     <!-- 自动调用事件 -->
     <ContentPage.Behaviors>
         <b:EventHandlerBehavior EventName="Appearing">
             <b:ActionCollection>
-                <b:InvokeCommandAction Command="{Binding PageAppearingCommand}" />
+                <!-- <b:InvokeCommandAction Command="{Binding PageAppearingCommand}" /> -->
+                <b:InvokeCommandAction Command="{Binding QuestionCategoryCommand}" />
             </b:ActionCollection>
         </b:EventHandlerBehavior>
     </ContentPage.Behaviors>
 
     <ContentPage.Content>
-        <ListView ItemsSource="{Binding QustionCollection}">
+        <ListView ItemsSource="{Binding QustionCollectionForCategory}">
             <ListView.Behaviors>
-            <!--     <s:InfiniteScrollBehavior /> -->
-            <b:EventHandlerBehavior EventName="ItemTapped">
-                <b:ActionCollection>
-                    <b:InvokeCommandAction
-                        Command="{Binding QuestionTappedCommand}"
-                        Converter="{StaticResource ItemToQuestion}" />
-                </b:ActionCollection>
-            </b:EventHandlerBehavior>
+                <!--     <s:InfiniteScrollBehavior /> -->
+                <b:EventHandlerBehavior EventName="ItemTapped">
+                    <b:ActionCollection>
+                        <b:InvokeCommandAction
+                            Command="{Binding QuestionTappedCommand}"
+                            Converter="{StaticResource ItemToQuestion}" />
+                    </b:ActionCollection>
+                </b:EventHandlerBehavior>
             </ListView.Behaviors>
-            
+
             <d:ListView.ItemsSource>
                 <x:Array Type="{x:Type x:String}">
                     <x:String>Item 1</x:String>
                     <x:String>Item 2</x:String>
                 </x:Array>
             </d:ListView.ItemsSource>
-            
+
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <TextCell Text="{Binding Name}"

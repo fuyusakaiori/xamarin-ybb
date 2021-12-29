@@ -3,10 +3,19 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:behaviors="clr-namespace:Behaviors;assembly=Behaviors"
              mc:Ignorable="d"
              BindingContext="{Binding NewQuestionViewModel, Source={StaticResource ViewModelLocator}}"
              x:Class="MasterDetailTemplate.Views.NewQuestionPage">
 
+    <!-- 自动调用事件 -->
+    <ContentPage.Behaviors>
+        <behaviors:EventHandlerBehavior EventName="Appearing">
+            <behaviors:ActionCollection>
+                <behaviors:InvokeCommandAction Command="{Binding PageAppearingCommand}" />
+            </behaviors:ActionCollection>
+        </behaviors:EventHandlerBehavior>
+    </ContentPage.Behaviors>
     <ContentPage.Content>
         <StackLayout Spacing="20" Padding="15">
             <Label Text="错题名称:" FontSize="Medium" />
@@ -14,7 +23,7 @@
             <Label Text="错题描述:" FontSize="Medium" />
             <Entry Text="{Binding Question.Content,Mode=TwoWay}" d:Text="Question.Content" FontSize="Small"/>
             <Label Text="错题类型" FontSize="Medium"/>
-            <Entry Text="{Binding Question.CategoryId, Mode=TwoWay}" d:Text="Question.Category" FontSize="Small"/>
+            <Picker  ItemsSource="{Binding QuestionCategoryCollection}" SelectedItem="{Binding SelectedColorName, Mode=TwoWay}" />
             <Button Text="保存"
                     Grid.Row="1"
                     Command="{Binding AddCommand}" />

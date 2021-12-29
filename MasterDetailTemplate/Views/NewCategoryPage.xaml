@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BindingContext="{Binding QuestionCategoryViewModel, Source={StaticResource ViewModelLocator}}"
+             x:Class="MasterDetailTemplate.Views.NewCategoryPage">
+    <ContentPage.Content>
+        <StackLayout Spacing="20" Padding="15">
+            <Label Text="错题类别名称:" FontSize="Medium" />
+            <Entry Text="{Binding QuestionCategory.Name,Mode=TwoWay}"  FontSize="Small"/>
+            <Button Text="保存"
+                    Grid.Row="1"
+                    Command="{Binding AddCommand}" />
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

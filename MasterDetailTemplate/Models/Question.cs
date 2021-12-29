@@ -18,9 +18,6 @@ namespace MasterDetailTemplate.Models
         [SQLite.Column("path")]
         public string Path { get; set; }
 
-        [SQLite.Column("category_id")]
-        public int CategoryId { get; set; }
-
         [SQLite.Column("category_name")]
         public string CategoryName { get; set; }
     }

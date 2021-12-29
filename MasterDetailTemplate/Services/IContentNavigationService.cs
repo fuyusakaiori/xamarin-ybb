@@ -48,6 +48,10 @@ namespace MasterDetailTemplate.Services {
         public static readonly string NewQuestionPage = nameof(Views.NewQuestionPage);
 
         public static readonly string QuestionsPage = nameof(Views.QuestionsPage);
+
+        public static readonly string QuestionsPageForCategory = nameof(Views.QuestionsPageForCategory);
+
+        public static readonly string NewCategoryPage = nameof(Views.NewCategoryPage);
         /// <summary>
         /// 页面键-页面类型字典。
         /// </summary>
@@ -56,7 +60,9 @@ namespace MasterDetailTemplate.Services {
                 new Dictionary<string, Type> {
                     [QuestionDetail] = typeof(QuestionDetail),
                     [NewQuestionPage] = typeof(NewQuestionPage),
-                    [QuestionsPage]=typeof(QuestionsPage)
+                    [QuestionsPage]=typeof(QuestionsPage),
+                    [QuestionsPageForCategory] = typeof(QuestionsPageForCategory),
+                    [NewCategoryPage] = typeof(NewCategoryPage)
                 });
 
     }

@@ -20,8 +20,8 @@ namespace MasterDetailTemplate.Views
 
             menuItems = new List<HomeMenuItem>
             {
-                new HomeMenuItem {Id = MenuItemType.Browse, Title="Browse" },
-                new HomeMenuItem {Id = MenuItemType.About, Title="About" }
+                new HomeMenuItem {Id = MenuItemType.Browse, Title="错题合集" },
+                new HomeMenuItem {Id = MenuItemType.About, Title="错题类型" }
             };
 
             ListViewMenu.ItemsSource = menuItems;
